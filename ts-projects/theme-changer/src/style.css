@@ -1,0 +1,74 @@
+:root {
+    --text-color: black;
+    --background-color: white;
+    --border-color: #ccc;
+    --hover-color: crimson;
+    --box-shadow-color: rgba(0, 0, 0, 0.35);
+    --button-color: #ccc;
+    --button-bg: #212121;
+}
+
+body.dark {
+    --text-color: white;
+    --background-color: black;
+    --border-color: #212121;
+    --box-shadow-color: rgba(100, 100, 111, 0.2);
+    --button-color: #212121;
+    --button-bg: #ccc;
+    background-color: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background 300ms ease-in-out;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: .7px solid var(--text-color);
+    background-color: var(--background-color);
+    padding: 18px;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-color) 0px 5px 15px;
+    color: var(--text-color);
+}
+
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 200;
+}
+
+.card p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-weight: 100;
+}
+
+.card button {
+    background-color: var(--button-bg);
+    transition: background, color 200ms ease-in-out;
+    padding: 12px 23px;
+    border-radius: 8px;
+    font-weight: 200;
+    color: var(--button-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: var(--hover-color);
+}
