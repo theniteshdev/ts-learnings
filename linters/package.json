@@ -1,0 +1,12 @@
+{
+  "name": "linters",
+  "version": "1.0.0",
+  "description": "learning eslint",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./dist/app.js"
+  },
+  "author": "theniteshdev",
+  "license": "ISC"
+}
